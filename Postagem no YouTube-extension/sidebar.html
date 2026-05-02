@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem no YouTube</title>
+    <style>
+        body {
+            padding: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: #667eea;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .panel {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+            margin-bottom: 5px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        .btn-secondary {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-success {
+            background: linear-gradient(90deg, #38ef7d 0%, #11998e 100%);
+            color: white;
+        }
+
+        .btn-success:hover {
+            opacity: 0.9;
+        }
+
+        .btn-danger {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+
+        .btn-danger:hover {
+            opacity: 0.9;
+        }
+
+        .btn-link {
+            background: transparent;
+            color: #667eea;
+            text-decoration: underline;
+            padding: 5px 10px;
+            font-size: 0.85em;
+            width: auto;
+        }
+
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        small {
+            color: #888;
+            font-size: 0.8em;
+        }
+
+        /* Alert Info */
+        .alert-info {
+            background: #d1ecf1;
+            border-left: 4px solid #0c5460;
+            color: #0c5460;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            font-size: 0.85em;
+        }
+
+        .alert-info strong {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .alert-info p {
+            margin: 4px 0;
+        }
+
+        .columns-list {
+            margin: 5px 0;
+            padding-left: 18px;
+        }
+
+        .columns-list li {
+            margin: 2px 0;
+        }
+
+        .columns-list code {
+            background: white;
+            padding: 1px 4px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .form-actions .btn {
+            flex: 1;
+        }
+
+        /* Logs Area */
+        #logs-area {
+            background: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.85em;
+            padding: 10px;
+            border-radius: 6px;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #333;
+        }
+
+        .log-entry {
+            margin-bottom: 4px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+        }
+
+        .log-time {
+            color: #888;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        .log-info {
+            color: #4fc3f7;
+        }
+
+        .log-success {
+            color: #81c784;
+        }
+
+        .log-warn {
+            color: #ffb74d;
+        }
+
+        .log-error {
+            color: #e57373;
+        }
+
+        /* Progress */
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* User Profile */
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-photo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #667eea;
+        }
+
+        .user-details {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .user-details strong {
+            display: block;
+        }
+
+        .user-details small {
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        /* Action Buttons */
+        .action-buttons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🤖 YouTube Auto</h1>
+        <p class="subtitle">Automação de Postagens em Lote</p>
+
+        <!-- Auth -->
+        <div id="authSection" class="panel">
+            <div id="loginPanel">
+                <button id="loginBtn" class="btn btn-primary">Login com Google</button>
+            </div>
+            <div id="userPanel" class="hidden">
+                <div class="user-info">
+                    <img id="userPhoto" class="user-photo" src="" alt="">
+                    <div class="user-details">
+                        <strong id="userName">Usuário</strong>
+                        <small id="userEmail">...</small>
+                    </div>
+                    <button id="logoutBtn" class="btn btn-link">Sair</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Config -->
+        <div id="configSection" class="panel hidden">
+            <details>
+                <summary style="cursor: pointer; margin-bottom: 10px;">⚙️ Configurações</summary>
+                <div class="form-group">
+                    <label>URL da Planilha Google *</label>
+                    <input type="url" id="sheetUrl" placeholder="https://docs.google.com/spreadsheets/d/...">
+                    <small>A planilha pode ser privada (você tem acesso via OAuth)</small>
+                </div>
+                <div class="form-group">
+                    <label>Nome da Aba *</label>
+                    <input type="text" id="sheetTab" placeholder="Ex: Postagens">
+                </div>
+
+                <div class="alert-info">
+                    <strong>📋 Estrutura Necessária:</strong>
+                    <p>A aba deve conter as colunas:</p>
+                    <ul class="columns-list">
+                        <li><code>Data Postagem</code></li>
+                        <li><code>Título do Video</code></li>
+                        <li><code>Descrição do Vídeo</code></li>
+                        <li><code>Nome do Arquivo de Video</code></li>
+                        <li><code>Situação da Postagem</code></li>
+                    </ul>
+                </div>
+
+                <div class="form-group">
+                    <label>Pasta Local dos Vídeos *</label>
+                    <input type="text" id="videosFolder" placeholder="/home/usuario/videos">
+                    <small>Caminho completo da pasta onde os vídeos estão salvos</small>
+                </div>
+                <div class="form-actions">
+                    <button id="validateConfigBtn" class="btn btn-secondary">🔍 Validar</button>
+                    <button id="saveConfigBtn" class="btn btn-success">💾 Salvar</button>
+                </div>
+            </details>
+        </div>
+
+        <!-- Controls -->
+        <div id="controlSection" class="panel hidden">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <span>Vídeos pendentes: <strong id="pendingCount">-</strong></span>
+            </div>
+            <div class="action-buttons">
+                <button id="startReplay" class="btn btn-primary">▶️ Iniciar</button>
+                <button id="stopReplay" class="btn btn-danger" disabled>⏹ Parar</button>
+            </div>
+        </div>
+
+        <!-- Status & Logs -->
+        <div id="statusSection" class="panel hidden">
+            <div class="progress-info">
+                <span id="videoTitle">Aguardando...</span>
+                <span id="statusText">...</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+
+            <label>Logs de Execução:</label>
+            <div id="logs-area"></div>
+        </div>
+
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="youtube-integration.js"></script>
+    <script src="sheets-integration.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
