@@ -805,6 +805,49 @@ async function executeAction(action) {
           console.warn('      ⚠️ Campo de minuto não encontrado');
         }
 
+      } else if (action.id === '1768509584974-jbgc7zksn') {
+        // --- 🛡️ TRATAMENTO ROBUSTO DO BOTÃO "PROGRAMAR" ---
+        // O site valida o áudio após upload. Para áudios longos, essa validação
+        // pode demorar. O botão fica desabilitado (disabled) até concluir.
+        // Aguardamos o botão ficar habilitado antes de clicar.
+        console.log('      🛡️ Aguardando botão "Programar" ficar habilitado...');
+
+        const PROGRAMAR_POLL_INTERVAL = 2000; // Verificar a cada 2 segundos
+        const PROGRAMAR_MAX_TIMEOUT = 120000; // Timeout máximo: 2 minutos
+        const programarBtnSelector = 'button[type="submit"][form="review-form"][data-encore-id="buttonPrimary"]';
+
+        let programarElapsed = 0;
+        let programarBtn = null;
+
+        while (programarElapsed < PROGRAMAR_MAX_TIMEOUT) {
+          programarBtn = document.querySelector(programarBtnSelector);
+
+          if (programarBtn && !programarBtn.disabled && !programarBtn.getAttribute('aria-disabled')) {
+            // Botão encontrado e habilitado!
+            console.log(`      ✅ Botão "Programar" habilitado após ${(programarElapsed / 1000).toFixed(0)}s`);
+            break;
+          }
+
+          // Exibir status no log para acompanhamento
+          const disabledStatus = programarBtn
+            ? `disabled=${programarBtn.disabled}, aria-disabled=${programarBtn.getAttribute('aria-disabled')}`
+            : 'botão não encontrado no DOM';
+          console.log(`      ⏳ Botão ainda desabilitado (${(programarElapsed / 1000).toFixed(0)}s/${PROGRAMAR_MAX_TIMEOUT / 1000}s) [${disabledStatus}]`);
+
+          await wait(PROGRAMAR_POLL_INTERVAL);
+          programarElapsed += PROGRAMAR_POLL_INTERVAL;
+        }
+
+        // Verificação final
+        programarBtn = document.querySelector(programarBtnSelector);
+        if (!programarBtn || programarBtn.disabled || programarBtn.getAttribute('aria-disabled') === 'true') {
+          throw new Error(`Botão "Programar" ainda desabilitado após ${PROGRAMAR_MAX_TIMEOUT / 1000}s. O áudio pode ser muito grande ou ocorreu um erro de validação no Spotify.`);
+        }
+
+        // Clicar no botão (no botão pai, não no span)
+        console.log('      🚀 Clicando no botão "Programar"...');
+        programarBtn.click();
+
       } else if (action.id === '1768509588599-zmo7n8mai') {
         // --- 🔘 TRATAMENTO DE CLIQUE DURO (BOTÃO FECHAR/PRONTO) ---
         console.log('      🔘 Clicando no botão Fechar (Forçado)...');
