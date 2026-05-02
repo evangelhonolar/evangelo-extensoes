@@ -1,0 +1,646 @@
+[
+  {
+    "attributes": {},
+    "id": "1768508593819-jqnteiy1c",
+    "selector": {
+      "attributes": {},
+      "css": "#upload-icon > yt-icon.remove-defaults > span.yt-icon-shape > div",
+      "text": null,
+      "xpath": "//*[@id=\"upload-icon\"]/yt-icon/span/div"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508593819,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508596444-ri6l35j5w",
+    "selector": {
+      "attributes": {},
+      "css": "#select-files-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"select-files-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508596444,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "name": "Filedata",
+      "type": "file"
+    },
+    "id": "1768508596446-e21mj9bki",
+    "selector": {
+      "attributes": {},
+      "css": "input[name=\"Filedata\"]",
+      "text": null,
+      "xpath": "//input[@name=\"Filedata\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508596446,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "name": "Filedata",
+      "type": "file"
+    },
+    "id": "1768508609299-no4nzl1or",
+    "inputType": "file",
+    "selector": {
+      "attributes": {},
+      "css": "input[name=\"Filedata\"]",
+      "text": null,
+      "xpath": "//input[@name=\"Filedata\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768508609299,
+    "type": "input",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A",
+    "value": "C:\\fakepath\\115.mp4"
+  },
+  {
+    "attributes": {
+      "aria-label": "Adicione um título que descreva o conteúdo do vídeo (insira uma @ para mencionar um canal)",
+      "role": "textbox"
+    },
+    "id": "1768508620733-buw9bx3sp",
+    "selector": {
+      "attributes": {},
+      "css": "#textbox",
+      "text": "115",
+      "xpath": "//*[@id=\"textbox\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "115",
+    "timestamp": 1768508620733,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "aria-label": "Adicione um título que descreva o conteúdo do vídeo (insira uma @ para mencionar um canal)",
+      "role": "textbox"
+    },
+    "id": "1768508620921-277cyrlef",
+    "selector": {
+      "attributes": {},
+      "css": "#textbox",
+      "text": "115",
+      "xpath": "//*[@id=\"textbox\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "115",
+    "timestamp": 1768508620921,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "aria-label": "Adicione um título que descreva o conteúdo do vídeo (insira uma @ para mencionar um canal)",
+      "role": "textbox"
+    },
+    "id": "1768508621103-u8r567tkd",
+    "selector": {
+      "attributes": {},
+      "css": "#textbox",
+      "text": "115",
+      "xpath": "//*[@id=\"textbox\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "115",
+    "timestamp": 1768508621103,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "aria-label": "Fale sobre seu vídeo para os espectadores (insira uma @ para mencionar um canal)",
+      "role": "textbox"
+    },
+    "id": "1768508626727-t0iy14xl8",
+    "selector": {
+      "attributes": {},
+      "css": "#textbox",
+      "text": "AJUDE OS NECESSITADOS, Seja membro deste canal.\nCI",
+      "xpath": "//*[@id=\"textbox\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "AJUDE OS NECESSITADOS, Seja membro deste canal.\nCI",
+    "timestamp": 1768508626727,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508637800-90ej25fj4",
+    "selector": {
+      "attributes": {},
+      "css": "#details",
+      "text": "Título (obrigatório)\n\n  \n  \n  Um título chamativo ",
+      "xpath": "//*[@id=\"details\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "ytcp-video-metadata-editor",
+    "text": "Título (obrigatório)\n\n  \n  \n  Um título chamativo ",
+    "timestamp": 1768508637801,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508639363-kfl7gelea",
+    "selector": {
+      "attributes": {},
+      "css": "#next-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"next-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508639363,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508640623-8oii71n3f",
+    "selector": {
+      "attributes": {},
+      "css": "div.m10n-text.clickable.style-scope.ytcp-video-monetization",
+      "text": "Selecionar",
+      "xpath": "//div[@class=\"m10n-text clickable style-scope ytcp-video-monetization\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "Selecionar",
+    "timestamp": 1768508640623,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508641598-x8bsygazv",
+    "selector": {
+      "attributes": {},
+      "css": "#offRadio",
+      "text": null,
+      "xpath": "//*[@id=\"offRadio\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508641598,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508642722-xl8ifa96t",
+    "selector": {
+      "attributes": {},
+      "css": "#save-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"save-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508642722,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508645257-vgo3feane",
+    "selector": {
+      "attributes": {},
+      "css": "#next-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"next-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508645257,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508648617-d4nvl8hbe",
+    "selector": {
+      "attributes": {},
+      "css": "#checkbox-container",
+      "text": null,
+      "xpath": "//*[@id=\"checkbox-container\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508648617,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508650701-iikwczgex",
+    "selector": {
+      "attributes": {},
+      "css": "#submit-questionnaire-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"submit-questionnaire-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508650701,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508656083-pnub35itj",
+    "selector": {
+      "attributes": {},
+      "css": "#next-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"next-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508656083,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508659865-sb583zg96",
+    "selector": {
+      "attributes": {},
+      "css": "#next-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"next-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508659865,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508662880-ll12dwi3h",
+    "selector": {
+      "attributes": {},
+      "css": "#next-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"next-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508662880,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508670826-nr6x947fm",
+    "selector": {
+      "attributes": {},
+      "css": "#second-container-expand-button > yt-icon.remove-defaults > span.yt-icon-shape > div",
+      "text": null,
+      "xpath": "//*[@id=\"second-container-expand-button\"]/yt-icon/span/div"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508670826,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A",
+    "waitBefore": 5000
+  },
+  {
+    "attributes": {},
+    "id": "1768508673075-i92q050ln",
+    "selector": {
+      "attributes": {},
+      "css": "#datepicker-trigger > ytcp-dropdown-trigger.style-scope > div.container > div.left-container:nth-child(2) > span.dropdown-trigger-text",
+      "text": "16 de jan. de 2026",
+      "xpath": "//*[@id=\"datepicker-trigger\"]/ytcp-dropdown-trigger/div/div[2]/span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "16 de jan. de 2026",
+    "timestamp": 1768508673075,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508679304-q09vw5hbj",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-3 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-3\"]/input"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508679304,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508679503-2bwrvx94q",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-3 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-3\"]/input"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508679503,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508679697-n9h3yz7fg",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-3 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-3\"]/input"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508679697,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508680999-0u82bel8h",
+    "inputType": "text",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-3 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-3\"]/input"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768508680999,
+    "type": "input",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A",
+    "value": "13/02/2026"
+  },
+  {
+    "action": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A",
+    "attributes": {},
+    "id": "1768508682755-ixpypymej",
+    "method": "get",
+    "selector": {
+      "attributes": {},
+      "css": "#form",
+      "text": null,
+      "xpath": "//*[@id=\"form\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768508682755,
+    "type": "submit",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508685151-d324c0q1x",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-1 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-1\"]/input"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508685151,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508685397-1ew6cua6d",
+    "selector": {
+      "attributes": {},
+      "css": "tp-yt-iron-overlay-backdrop.opened",
+      "text": null,
+      "xpath": "//tp-yt-iron-overlay-backdrop[@class=\"opened\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "tp-yt-iron-overlay-backdrop",
+    "text": "",
+    "timestamp": 1768508685397,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508686143-31l219x24",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-1 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-1\"]/input"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508686143,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508686342-f2v3erwof",
+    "selector": {
+      "attributes": {},
+      "css": "tp-yt-iron-overlay-backdrop.opened",
+      "text": null,
+      "xpath": "//tp-yt-iron-overlay-backdrop[@class=\"opened\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "tp-yt-iron-overlay-backdrop",
+    "text": "",
+    "timestamp": 1768508686342,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508688047-ywrvyva7h",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-1 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-1\"]/input"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768508688047,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {
+      "placeholder": ""
+    },
+    "id": "1768508690124-013p4kja4",
+    "inputType": "text",
+    "selector": {
+      "attributes": {
+        "placeholder": ""
+      },
+      "css": "#input-1 > input.style-scope",
+      "text": null,
+      "xpath": "//*[@id=\"input-1\"]/input"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768508690124,
+    "type": "input",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A",
+    "value": "20:00"
+  },
+  {
+    "attributes": {
+      "type": "tonal"
+    },
+    "id": "1768508691501-dnbnwh6jf",
+    "selector": {
+      "attributes": {},
+      "css": "#timezone-select-button",
+      "text": "Fuso horário",
+      "xpath": "//*[@id=\"timezone-select-button\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "ytcp-button",
+    "text": "Fuso horário",
+    "timestamp": 1768508691501,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508692788-msxv57kp2",
+    "selector": {
+      "attributes": {},
+      "css": "tp-yt-iron-overlay-backdrop.opened",
+      "text": null,
+      "xpath": "//tp-yt-iron-overlay-backdrop[@class=\"opened\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "tp-yt-iron-overlay-backdrop",
+    "text": "",
+    "timestamp": 1768508692788,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508695833-f4vqlmeg2",
+    "selector": {
+      "attributes": {},
+      "css": "#done-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"done-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508695833,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "attributes": {},
+    "id": "1768508698591-1a8mc8pik",
+    "selector": {
+      "attributes": {},
+      "css": "#primary-action-button > ytcp-button-shape > button.ytcpButtonShapeImplHost > yt-touch-feedback-shape.yt-spec-touch-feedback-shape > div.yt-spec-touch-feedback-shape__fill:nth-child(2)",
+      "text": null,
+      "xpath": "//*[@id=\"primary-action-button\"]/ytcp-button-shape/button/yt-touch-feedback-shape/div[2]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768508698591,
+    "type": "click",
+    "url": "https://studio.youtube.com/channel/UCA_uN3X9OcuFGAZaxK7Ri7A"
+  },
+  {
+    "id": "1768508710000-closebtn",
+    "type": "click",
+    "selector": {
+      "attributes": {},
+      "css": "#close-button button",
+      "xpath": "//*[@id=\"close-button\"]//button",
+      "text": "Fechar"
+    },
+    "tabId": 394884283,
+    "tagName": "button",
+    "text": "Fechar",
+    "timestamp": 1768508710000,
+    "waitBefore": 5000
+  }
+]

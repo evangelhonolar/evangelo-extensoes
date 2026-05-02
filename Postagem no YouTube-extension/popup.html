@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Postagem no YouTube</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>🤖 Postagem no YouTube</h1>
+    <p class="subtitle">Automação de Postagens em Lote</p>
+
+    <!-- Seção de Autenticação -->
+    <div id="authSection" class="auth-section">
+      <div id="loginPanel" class="panel">
+        <p class="info-text">Faça login com sua conta Google para começar:</p>
+        <button id="loginBtn" class="btn btn-primary">
+          <span class="google-icon">G</span> Login com Google
+        </button>
+      </div>
+
+      <div id="userPanel" class="panel hidden">
+        <div class="user-info">
+          <img id="userPhoto" class="user-photo" src="" alt="User">
+          <div class="user-details">
+            <strong id="userName">Usuário</strong>
+            <small id="userEmail">email@example.com</small>
+          </div>
+          <button id="logoutBtn" class="btn btn-link">Sair</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seção de Configuração -->
+    <div id="configSection" class="config-section hidden">
+      <details open>
+        <summary class="section-title">⚙️ Configurações</summary>
+
+        <div class="form-group">
+          <label for="sheetUrl">URL da Planilha Google *</label>
+          <input type="url" id="sheetUrl" placeholder="https://docs.google.com/spreadsheets/d/..." required>
+          <small class="help-text">A planilha pode ser privada (você tem acesso via OAuth)</small>
+        </div>
+
+        <div class="form-group">
+          <label for="sheetTab">Nome da Aba *</label>
+          <input type="text" id="sheetTab" placeholder="Ex: Postagens" required>
+        </div>
+
+        <div class="alert alert-info">
+          <strong>📋 Estrutura Necessária:</strong>
+          <p>A aba deve conter as colunas:</p>
+          <ul class="columns-list">
+            <li><code>Data Postagem</code></li>
+            <li><code>Título do Video</code></li>
+            <li><code>Descrição do Vídeo</code></li>
+            <li><code>Nome do Arquivo de Video</code></li>
+            <li><code>Situação da Postagem</code></li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label for="videosFolder">Pasta Local dos Vídeos *</label>
+          <input type="text" id="videosFolder" placeholder="C:\Videos ou /home/usuario/videos" required>
+          <small class="help-text">Caminho completo da pasta onde os vídeos estão salvos</small>
+        </div>
+
+        <div class="form-actions">
+          <button id="validateConfigBtn" class="btn btn-secondary">🔍 Validar</button>
+          <button id="saveConfigBtn" class="btn btn-success">💾 Salvar</button>
+        </div>
+      </details>
+    </div>
+
+    <!-- Seção de Controle -->
+    <div id="controlSection" class="controls hidden">
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-label">Vídeos pendentes:</span>
+          <span id="pendingCount" class="stat-value">-</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Total de ações:</span>
+          <span class="stat-value">27</span>
+        </div>
+      </div>
+
+      <div class="action-buttons">
+        <button id="startReplay" class="btn btn-primary">▶️ Iniciar Automação</button>
+        <button id="stopReplay" class="btn btn-danger" disabled>⏹ Parar</button>
+      </div>
+    </div>
+
+    <!-- Seção de Status -->
+    <div id="status" class="status hidden">
+      <div class="progress-info">
+        <span id="currentVideoTitle" class="current-video">Carregando...</span>
+        <span id="statusText" class="status-text">Executando...</span>
+      </div>
+
+      <div class="progress-bar">
+        <div id="progressFill" class="progress-fill"></div>
+      </div>
+
+      <p id="progressText" class="progress-text">Processando vídeo 0 de 0</p>
+    </div>
+
+    <!-- Log de Erros -->
+    <div id="errorLog" class="error-log hidden">
+      <h3>⚠️ Erros</h3>
+      <ul id="errorList"></ul>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="youtube-integration.js"></script>
+  <script src="sheets-integration.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>

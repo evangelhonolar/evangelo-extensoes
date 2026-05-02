@@ -1,0 +1,411 @@
+[
+  {
+    "attributes": {},
+    "id": "1768509517422-8zidcrlfk",
+    "selector": {
+      "attributes": {},
+      "css": "a[data-encore-id=\"buttonPrimary\"][href*=\"/episode/wizard\"] span",
+      "text": "Novo episódio",
+      "xpath": "//a[@data-encore-id=\"buttonPrimary\" and contains(@href, \"/episode/wizard\")]//span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "Novo episódio",
+    "timestamp": 1768509517422,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episodes"
+  },
+  {
+    "id": "1768509517433-vmy8cjgir",
+    "tabId": 394884283,
+    "timestamp": 1768509517433,
+    "title": "Lista de episódios | Spotify for Creators",
+    "type": "navigate",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/wizard"
+  },
+  {
+    "attributes": {},
+    "id": "1768509519214-hbs1bn68s",
+    "selector": {
+      "attributes": {},
+      "css": "button[data-encore-id=\"buttonPrimary\"] span, a[data-encore-id=\"buttonPrimary\"] span",
+      "text": "Selecione um arquivo",
+      "xpath": "//*[@data-encore-id=\"buttonPrimary\"]//span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "Selecione um arquivo",
+    "timestamp": 1768509519214,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/wizard"
+  },
+  {
+    "attributes": {
+      "type": "file"
+    },
+    "id": "1768509519220-lelazyrqy",
+    "selector": {
+      "attributes": {},
+      "css": "#uploadAreaInput",
+      "text": null,
+      "xpath": "//*[@id=\"uploadAreaInput\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768509519220,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/wizard"
+  },
+  {
+    "id": "1768509539559-q6cqqgsxv",
+    "tabId": 394884283,
+    "timestamp": 1768509539559,
+    "title": "Spotify for Creators – A maneira mais fácil de criar um podcast",
+    "type": "navigate",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "type": "file"
+    },
+    "id": "1768509539603-i8yo89nqy",
+    "inputType": "file",
+    "selector": {
+      "attributes": {},
+      "css": "#uploadAreaInput",
+      "text": null,
+      "xpath": "//*[@id=\"uploadAreaInput\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768509539603,
+    "type": "input",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "value": "C:\\fakepath\\115.ogg"
+  },
+  {
+    "attributes": {
+      "name": "title",
+      "placeholder": "Dê um nome ao seu episódio"
+    },
+    "id": "1768509545432-7r541fj97",
+    "selector": {
+      "attributes": {},
+      "css": "#title-input",
+      "text": null,
+      "xpath": "//*[@id=\"title-input\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768509545432,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "name": "title",
+      "placeholder": "Dê um nome ao seu episódio"
+    },
+    "id": "1768509546705-rhsn3quu7",
+    "inputType": "text",
+    "selector": {
+      "attributes": {},
+      "css": "#title-input",
+      "text": null,
+      "xpath": "//*[@id=\"title-input\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768509546705,
+    "type": "input",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "value": "Coragem da fé - Cap. XXIV Não coloqueis a candeia sob o alqueire"
+  },
+  {
+    "attributes": {},
+    "id": "1768509548374-mbyeg4fp0",
+    "selector": {
+      "attributes": {},
+      "css": "[data-slate-node=\"element\"]",
+      "text": "O que mais você quer contar ao seu público?",
+      "xpath": "//*[@data-slate-node=\"element\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "p",
+    "text": "O que mais você quer contar ao seu público?",
+    "timestamp": 1768509548374,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "role": "textbox",
+      "name": "description",
+      "contenteditable": "true"
+    },
+    "id": "1768509562558-56ax0pifv",
+    "inputType": "text",
+    "selector": {
+      "attributes": {
+        "role": "textbox",
+        "name": "description"
+      },
+      "css": "div[role=\"textbox\"][name=\"description\"]",
+      "text": "O que mais você quer contar ao seu público?",
+      "xpath": "//div[@role=\"textbox\"][@name=\"description\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "div",
+    "text": "",
+    "timestamp": 1768509562558,
+    "type": "input",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "value": ""
+  },
+  {
+    "attributes": {},
+    "id": "1768509569375-pkzw9d28w",
+    "selector": {
+      "attributes": {},
+      "css": "button[type=\"submit\"][form=\"details-form\"][data-encore-id=\"buttonPrimary\"] span",
+      "text": "Próximo",
+      "xpath": "//button[@type=\"submit\"][@form=\"details-form\"][@data-encore-id=\"buttonPrimary\"]//span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "Próximo",
+    "timestamp": 1768509569375,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "action": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "attributes": {},
+    "id": "1768509569379-gqu3k8yfs",
+    "method": "post",
+    "selector": {
+      "attributes": {},
+      "css": "#details-form",
+      "text": "DetalhesInformações do episódioTítulo*(required)64",
+      "xpath": "//*[@id=\"details-form\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768509569379,
+    "type": "submit",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {},
+    "id": "1768509572373-ykya83uzj",
+    "selector": {
+      "attributes": {},
+      "css": "#publish-date-schedule + label span, label[for=\"publish-date-schedule\"] span",
+      "text": null,
+      "xpath": "//*[@id=\"review-form\"]/div[2]/div/div/section/div[2]/fieldset/div[2]/label/span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "",
+    "timestamp": 1768509572373,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "name": "wizardPublishDateSelection",
+      "type": "radio",
+      "value": "schedule"
+    },
+    "id": "1768509572380-d9s9d4340",
+    "selector": {
+      "attributes": {},
+      "css": "#publish-date-schedule",
+      "text": null,
+      "xpath": "//*[@id=\"publish-date-schedule\"]"
+    },
+    "tabId": 394884283,
+    "tagName": "input",
+    "text": "",
+    "timestamp": 1768509572380,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "name": "wizardPublishDateSelection",
+      "type": "radio",
+      "value": "schedule"
+    },
+    "checked": true,
+    "id": "1768509572399-iwfgfsnwu",
+    "selector": {
+      "attributes": {},
+      "css": "#publish-date-schedule",
+      "text": null,
+      "xpath": "//*[@id=\"publish-date-schedule\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768509572399,
+    "type": "radio",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "value": "schedule"
+  },
+  {
+    "attributes": {
+      "name": "wizardPublishDateSelection",
+      "type": "radio",
+      "value": "schedule"
+    },
+    "id": "1768509573402-i11r026to",
+    "inputType": "radio",
+    "selector": {
+      "attributes": {},
+      "css": "#publish-date-schedule",
+      "text": null,
+      "xpath": "//*[@id=\"publish-date-schedule\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768509573402,
+    "type": "input",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "value": "schedule"
+  },
+  {
+    "attributes": {},
+    "id": "1768509576488-bqmrfufae",
+    "selector": {
+      "attributes": {},
+      "css": "#review-form button[data-encore-id] span, #review-form button.Button-sc-y0gtbx-0 span",
+      "text": "15/01/2026",
+      "xpath": "//*[@id=\"review-form\"]/div[2]/div/div/section/div[2]/div/div/button/span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "15/01/2026",
+    "timestamp": 1768509576488,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "role": "img"
+    },
+    "id": "1768509578090-4meyuf235",
+    "selector": {
+      "attributes": {
+        "role": "img"
+      },
+      "css": "div.DayPicker_focusRegion:nth-child(2) > div.DayPickerNavigation:nth-child(1) > div.DayPickerNavigation_button:nth-child(2) > div.calendarDatePicker__navIcon > svg",
+      "text": null,
+      "xpath": "//*[@id=\"review-form\"]/div[2]/div/div/section/div[2]/div/div/div[2]/div/div/div/div/div[2]/div/div[2]/div/svg"
+    },
+    "tabId": 394884283,
+    "tagName": "svg",
+    "text": "",
+    "timestamp": 1768509578090,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {
+      "aria-label": "sexta-feira, 13 de fevereiro de 2026",
+      "role": "button"
+    },
+    "id": "1768509581816-vlqt6skyq",
+    "selector": {
+      "attributes": {
+        "aria-label": "sexta-feira, 13 de fevereiro de 2026",
+        "role": "button"
+      },
+      "css": "div.CalendarMonth > table.CalendarMonth_table > tbody > tr:nth-child(2) > td.CalendarDay:nth-child(6)",
+      "text": "13",
+      "xpath": "//*[@id=\"review-form\"]/div[2]/div/div/section/div[2]/div/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[3]/div/table/tbody/tr[2]/td[6]"
+    },
+    "tabId": 394884283,
+    "tagName": "td",
+    "text": "13",
+    "timestamp": 1768509581816,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "attributes": {},
+    "id": "1768509584974-jbgc7zksn",
+    "selector": {
+      "attributes": {},
+      "css": "button[type=\"submit\"][form=\"review-form\"][data-encore-id=\"buttonPrimary\"] span",
+      "text": "Programar",
+      "xpath": "//button[@type=\"submit\"][@form=\"review-form\"][@data-encore-id=\"buttonPrimary\"]//span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "Programar",
+    "timestamp": 1768509584974,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "action": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard",
+    "attributes": {},
+    "id": "1768509585000-jeeb1ixwm",
+    "method": "post",
+    "selector": {
+      "attributes": {},
+      "css": "#review-form",
+      "text": "Verificar e publicarProgramarData de publicação*(r",
+      "xpath": "//*[@id=\"review-form\"]"
+    },
+    "tabId": 394884283,
+    "timestamp": 1768509585000,
+    "type": "submit",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episode/1d6NTKcrGbixeb8NPoxodS/wizard"
+  },
+  {
+    "id": "1768509585893-j5km2omw6",
+    "tabId": 394884283,
+    "timestamp": 1768509585893,
+    "title": "Spotify for Creators – A maneira mais fácil de criar um podcast",
+    "type": "navigate",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episodes"
+  },
+  {
+    "id": "1768509586013-uax5sqfxf",
+    "tabId": 394884283,
+    "timestamp": 1768509586013,
+    "title": "Lista de episódios | Spotify for Creators",
+    "type": "navigate",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episodes"
+  },
+  {
+    "attributes": {},
+    "id": "1768509588599-zmo7n8mai",
+    "selector": {
+      "attributes": {},
+      "css": "#everboarding-modal-body button[data-encore-id] span, #everboarding-modal-body button span",
+      "text": "Pronto",
+      "xpath": "//*[@id=\"everboarding-modal-body\"]/div/div/div[2]/button/span"
+    },
+    "tabId": 394884283,
+    "tagName": "span",
+    "text": "Pronto",
+    "timestamp": 1768509588599,
+    "type": "click",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episodes"
+  },
+  {
+    "id": "1768509588610-6k3zj75w3",
+    "tabId": 394884283,
+    "timestamp": 1768509588610,
+    "title": "Lista de episódios | Spotify for Creators",
+    "type": "navigate",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episodes"
+  },
+  {
+    "id": "1768509588616-b9i51fb42",
+    "tabId": 394884283,
+    "timestamp": 1768509588616,
+    "title": "Lista de episódios | Spotify for Creators",
+    "type": "navigate",
+    "url": "https://creators.spotify.com/pod/show/7CKBJLjsiUQM1Yq8FT22UN/episodes"
+  }
+]

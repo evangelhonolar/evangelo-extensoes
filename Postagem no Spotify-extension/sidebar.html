@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postagem no Spotify</title>
+    <style>
+        body {
+            padding: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: #1DB954;
+        }
+
+        .subtitle {
+            color: #777;
+            font-size: 0.9em;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        .panel {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: background 0.2s;
+            margin-bottom: 5px;
+        }
+
+        .btn-primary {
+            background: #1DB954;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1aa34a;
+        }
+
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #d0d0d0;
+        }
+
+        .btn-danger {
+            background: #ff5252;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #ff1744;
+        }
+
+        /* Forms */
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+            font-size: 0.9em;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        small {
+            color: #888;
+            font-size: 0.8em;
+        }
+
+        /* Logs Area */
+        #logs-area {
+            background: #1e1e1e;
+            color: #e0e0e0;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.85em;
+            padding: 10px;
+            border-radius: 6px;
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #333;
+        }
+
+        .log-entry {
+            margin-bottom: 4px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 2px;
+        }
+
+        .log-time {
+            color: #888;
+            font-size: 0.8em;
+            margin-right: 5px;
+        }
+
+        .log-info {
+            color: #4fc3f7;
+        }
+
+        .log-success {
+            color: #81c784;
+        }
+
+        .log-warn {
+            color: #ffb74d;
+        }
+
+        .log-error {
+            color: #e57373;
+        }
+
+        /* Progress */
+        .progress-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: #e0e0e0;
+            border-radius: 3px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: #1DB954;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        /* User Profile */
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-photo {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .user-details {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        .user-details strong {
+            display: block;
+        }
+
+        .user-details small {
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🤖 Spotify Auto</h1>
+        <p class="subtitle">Automação de Postagens</p>
+
+        <!-- Auth -->
+        <div id="authSection" class="panel">
+            <div id="loginPanel">
+                <button id="loginBtn" class="btn btn-primary">Login com Google</button>
+            </div>
+            <div id="userPanel" class="hidden">
+                <div class="user-info">
+                    <img id="userPhoto" class="user-photo" src="" alt="">
+                    <div class="user-details">
+                        <strong id="userName">Usuário</strong>
+                        <small id="userEmail">...</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Config -->
+        <div id="configSection" class="panel hidden">
+            <details>
+                <summary style="cursor: pointer; margin-bottom: 10px;">⚙️ Configurações</summary>
+                <div class="form-group">
+                    <label>URL Planilha</label>
+                    <input type="url" id="sheetUrl">
+                </div>
+                <div class="form-group">
+                    <label>Nome Aba</label>
+                    <input type="text" id="sheetTab">
+                </div>
+                <div class="form-group">
+                    <label>Pasta dos arquivos de audio em formato OGG</label>
+                    <input type="text" id="videosFolder">
+                </div>
+                <button id="saveConfigBtn" class="btn btn-primary">Salvar</button>
+            </details>
+        </div>
+
+        <!-- Controls -->
+        <div id="controlSection" class="panel hidden">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                <span>Vídeos pendentes: <strong id="pendingCount">-</strong></span>
+            </div>
+            <div class="action-buttons">
+                <button id="startReplay" class="btn btn-primary">▶️ Iniciar</button>
+                <button id="stopReplay" class="btn btn-danger" disabled>⏹ Parar</button>
+            </div>
+        </div>
+
+        <!-- Status & Logs -->
+        <div id="statusSection" class="panel hidden">
+            <div class="progress-info">
+                <span id="videoTitle">Aguardando...</span>
+                <span id="statusText">...</span>
+            </div>
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+
+            <label>Logs de Execução:</label>
+            <div id="logs-area"></div>
+        </div>
+
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="sheets-integration.js"></script>
+    <script src="sidebar.js"></script>
+</body>
+
+</html>
